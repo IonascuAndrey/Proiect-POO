@@ -7,7 +7,6 @@
 using namespace std;
 
 int main() {
-    std::cout<<"Hello, world!"<<endl;
     E_Bike bike = E_Bike();
     return 0;
 }
