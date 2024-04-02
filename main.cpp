@@ -1,4 +1,9 @@
 #include <iostream>
+#include <list>
+#include <vector>
+
+
+#include "include/Bike.h"
 #include "include/E_Bike.h"
 #include "include/User.h"
 #include "include/Rental.h"
@@ -135,6 +140,30 @@
 // }
 
 int main() {
-    E_Bike bike = E_Bike();
+    std::vector<Bike*> Bikes;
+    int nrEBikes;
+    std::cin>>nrEBikes;
+    for(int i=0; i<nrEBikes; i++) {
+        E_Bike *bike = new E_Bike();
+        std::cin >> *bike;
+        Bikes.push_back(bike);
+        // std::cout<<*bike<<std::endl;
+    }
+    // E_Bike eb1 = E_Bike("Manufacturer1", "ModelName1", 1000, 15, 1, true, 10, 80);
+    // E_Bike eb2 = E_Bike("Manufacturer2", "ModelName2", 1200, 16, 1, false, 10, 80);
+    // E_Bike eb3 = E_Bike("Manufacturer3", "ModelName3", 1030, 14, 1, true, 12, 80);
+    // E_Bike eb4 = E_Bike("Manufacturer4", "ModelName4", 1500, 11, 1, true, 10, 60);
+    // E_Bike eb5 = E_Bike("Manufacturer5", "ModelName5", 2000, 19, 1, true, 10, 80);
+    // E_Bikes_list.push_back(eb1);
+    // E_Bikes_list.push_back(eb2);
+    // E_Bikes_list.push_back(eb3);
+    // E_Bikes_list.push_back(eb4);
+    // E_Bikes_list.push_back(eb5);
+
+
+    for(auto it = Bikes.begin(); it!= Bikes.end(); it++) {
+        Bike *bike = *it;
+        std::cout << *bike;
+    }
     return 0;
 }

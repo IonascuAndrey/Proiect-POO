@@ -1,0 +1,11 @@
+10
+Manufacturer1 ModelName1 1000 15 1 1 10 80
+Manufacturer2 ModelName2 2000 18 2 0 15 70
+Manufacturer3 ModelName3 1500 20 3 1 12 90
+Manufacturer4 ModelName4 1800 17 2 0 14 85
+Manufacturer5 ModelName5 1200 16 2 1 11 75
+Manufacturer6 ModelName6 1700 19 3 0 13 85
+Manufacturer7 ModelName7 1400 18 2 1 10 95
+Manufacturer8 ModelName8 1600 15 2 0 12 80
+Manufacturer9 ModelName9 1100 14 3 1 9 70
+Manufacturer10 ModelName10 1300 16 1 0 11 75
